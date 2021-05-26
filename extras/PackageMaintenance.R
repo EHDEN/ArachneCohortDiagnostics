@@ -25,12 +25,15 @@ shell("R CMD Rd2pdf ./ --output=extras/examplePackage.pdf")
 
 
 # Insert cohort definitions from ATLAS into package -----------------------
+
+ROhdsiWebApi::authorizeWebApi(baseUrl = "https://test-atlas.ehden.eu/WebAPI", authMethod = "db", webApiUsername = "p.rijnbeek@erasmusmc.nl", webApiPassword = "toCvuq-kahrer-4goxwy")
+
 ROhdsiWebApi::insertCohortDefinitionSetInPackage(fileName = "inst/settings/CohortsToCreate.csv",
-                                                 baseUrl = Sys.getenv("ohdsiBaseUrl"),
+                                                 baseUrl = Sys.getenv("ehdenBaseUrl"),
                                                  insertTableSql = TRUE,
                                                  insertCohortCreationR = TRUE,
                                                  generateStats = TRUE,
-                                                 packageName = "examplePackage")
+                                                 packageName = "ArachneCohortDiagnostics")
 
 # Store environment in which the study was executed -----------------------
-OhdsiRTools::insertEnvironmentSnapshotInPackage("examplePackage")
+OhdsiRTools::insertEnvironmentSnapshotInPackage("ArachneCohortDiagnostics")

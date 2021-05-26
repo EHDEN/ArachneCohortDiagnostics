@@ -96,7 +96,7 @@ runCohortDiagnostics <- function(connectionDetails,
   }
 
   ParallelLogger::logInfo("Running study diagnostics")
-  CohortDiagnostics::runCohortDiagnostics(packageName = "arachneCohortDiagnostics",
+  CohortDiagnostics::runCohortDiagnostics(packageName = "ArachneCohortDiagnostics",
                                           connectionDetails = connectionDetails,
                                           cdmDatabaseSchema = cdmDatabaseSchema,
                                           oracleTempSchema = oracleTempSchema,

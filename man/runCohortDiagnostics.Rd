@@ -23,6 +23,7 @@ runCohortDiagnostics(
   runIncidenceRates = TRUE,
   runCohortOverlap = TRUE,
   runCohortCharacterization = TRUE,
+  runTemporalCohortCharacterization = TRUE,
   minCellCount = 5
 )
 }
@@ -76,7 +77,9 @@ Synthetic Public Use Files (SynPUFs)').}
 
 \item{runCohortCharacterization}{Generate and export the cohort characterization?}
 
-\item{minCellCount}{The minimum number of subjects contributing to a count before it can be included 
+\item{runTemporalCohortCharacterization}{Generate and export the temporal cohort characterization?}
+
+\item{minCellCount}{The minimum number of subjects contributing to a count before it can be included
 in packaged results.}
 }
 \description{

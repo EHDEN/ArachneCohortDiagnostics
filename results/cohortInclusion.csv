@@ -1,0 +1,7 @@
+cohortDefinitionId,ruleSequence,name
+1770710,0,has hypertension diagnosis in 1 yr prior to treatment
+1770710,1,Has no prior antihypertensive drug exposures in medical history
+1770710,2,"Is only taking ACE as monotherapy, with no concomitant combination treatments"
+1770711,0,has hypertension diagnosis in 1 yr prior to treatment
+1770711,1,Has no prior antihypertensive drug exposures in medical history
+1770711,2,"Is only taking ACE as monotherapy, with no concomitant combination treatments"

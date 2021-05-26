@@ -1,0 +1,42 @@
+Thread: Main
+Message:  Error in initialize(value, ...) :    invalid name for slot of class “SQLiteConnection”: extended_types 
+Level:  FATAL
+Time:  2021-05-19 21:21:32
+
+Stack trace:
+15: stop(sprintf(ngettext(sum(is.na(which)), "invalid name for slot of class %s: %s", "invalid names for slots of class %s: %s"), dQuote(Clas
+14: initialize(value, ...)
+13: initialize(value, ...)
+12: new("SQLiteConnection", ptr = connection_connect(dbname, loadable.extensions, flags, vfs, extended_types), dbname = dbname, flags = flags
+11: .local(drv, ...)
+10: RSQLite::dbConnect(RSQLite::SQLite(), tempfile(tmpdir = tempFolder, fileext = ".sqlite"))
+9: RSQLite::dbConnect(RSQLite::SQLite(), tempfile(tmpdir = tempFolder, fileext = ".sqlite"))
+8: .createAndromeda()
+7: Andromeda::andromeda()
+6: (function (connection, oracleTempSchema = NULL, cdmDatabaseSchema, cohortTable = "#cohort_person", cohortId = -1, cdmVersion = "5", rowId
+5: do.call(eval(parse(text = fun)), args)
+4: FeatureExtraction::getDbCovariateData(connection = connection, oracleTempSchema = oracleTempSchema, cdmDatabaseSchema = cdmDatabaseSchema
+3: getTimeDistributions(connection = connection, oracleTempSchema = oracleTempSchema, cdmDatabaseSchema = cdmDatabaseSchema, cohortDatabaseS
+2: CohortDiagnostics.R#99: CohortDiagnostics::runCohortDiagnostics(packageName = "ArachneCohortDiagnostics", connectionDetails = connectionD
+1: ArachneCohortDiagnostics::runCohortDiagnostics(connectionDetails = connectionDetails, cdmDatabaseSchema = cdmDatabaseSchema, cohortDataba
+
+R version:
+R version 4.0.3 (2020-10-10)
+
+Platform:
+x86_64-apple-darwin17.0
+
+Attached base packages:
+- stats
+- graphics
+- grDevices
+- utils
+- datasets
+- methods
+- base
+
+Other attached packages:
+- ArachneCohortDiagnostics (0.0.1)
+- DatabaseConnector (4.0.2)
+
+
