@@ -1,7 +1,7 @@
 Package: ArachneCohortDiagnostics
 Type: Package
-Title: A Package Skeleton for Cohort Diagnostics
-Version: 0.0.1
+Title: A Package to test execution of CohortDiagnostics through Arachne
+Version: 1.0.0
 Author: Peter Rijnbeek [aut, cre]
 Maintainer: Peter Rijnbeek <rijnbeek@ohdsi.org>
 Description: A skeleton package, to be used as a starting point when you just want to run cohort diagnostics to be executed by Arachne
